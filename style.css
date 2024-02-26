@@ -1,0 +1,457 @@
+.name{
+    font-family: 'Arizonia';
+    font-size: 50px;
+    font-weight: 20;
+    text-align: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arizonia';
+}
+
+
+.navi ul {
+    color: black;
+    background-color: white;
+    height: 5%;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.3vw;
+    transform: translateY(0,50%);
+    padding-bottom: 1vw;
+    font-family: 'Dancing Script';
+}
+
+.navi li {
+    display: inline;
+    padding: 1vw;
+}
+
+@keyframes animate {
+    from{
+
+    }
+    to{
+        transform: rotateX(90);
+        font-size: 4vw;
+    }
+}
+
+.typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    /* letter-spacing: .15em; Adjust as needed */
+    animation: 
+      typing 2.5s steps(40, end),
+      blink-caret .50s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+.image{
+    display: flex;
+
+}
+.img1{
+    width: 50%;
+    background-image: url("https://thumbs.dreamstime.com/b/fashion-pretty-cool-youngwith-shopping-bags-wearing-black-hat-white-pants-over-colorful-orange-background-79063329.jpg");
+    background-size: cover;
+}
+.img1 p{
+    margin-top: 20%;
+    margin-left: 40%;
+    font-size: 3vw;
+    color: white;
+    font-weight: bold;
+    z-index: 1;
+   
+    /* animation: animate 1s ease-in-out; */
+
+    
+}
+
+.img1 p span{
+    color: red;
+    animation: animate 10s 10s infinite ease;
+}
+
+.img2{
+    width: 50%;
+    background-image: url("https://cdn.pixabay.com/photo/2017/09/01/21/53/sunglasses-2705642_1280.jpg");
+    background-size: cover;
+}
+
+.whole{
+    height:252px;
+    justify-content: center;
+    margin: 2vw;
+    object-fit: contain;
+}
+
+body{
+    justify-content: center;
+}
+
+.main_container{
+    justify-content: center;
+}
+
+.head1{
+    margin-top: 2vw;
+    /* margin-left: 6vw; */
+    font-size: 2rem;
+    font-family: 'Dancing Script', cursive;
+}
+
+.main_container .head1 p{
+    font-size: 1.6rem;
+    color: rgb(164, 163, 163);
+    font-family: 'Barlow Semi Condensed', sans-serif;}
+
+.desc_bag{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.bag1{
+    height: 80%;
+    width: 100%;
+    object-fit: contain;
+    text-align: center;
+}
+.bags{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    box-shadow: 10px 10px 10px 10px rgb(227, 226, 226);
+    justify-content: center;
+}
+
+.bag1 img{
+    height: 85%;
+    object-fit: contain;
+}
+.container{
+    margin: 2vw;
+}
+
+@media screen {
+    .container{
+        max-width: 1200px;
+        min-width: 360px;
+        min-height: 100px; 
+        align-self: center;
+        margin: auto;
+        margin-top: 10vw;
+        justify-content: center;
+    }
+
+   
+.image{
+
+    display: flex;
+    max-width: 100%;
+    min-width: 360px;
+    min-height: 30vw;
+
+}
+.whole{
+    max-width: 40vw;
+    min-width: 10rem;
+   
+}
+.shoe{
+    max-width: 10rem;
+}
+.dress{
+    max-width: 10rem;
+}
+}
+
+.shoes_col{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow-y: hidden;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px 10px rgb(227, 226, 226);
+    justify-content: center;
+}
+
+.shoe{
+    height:252px;
+    margin: 2vw;
+    object-fit: contain;
+
+}
+
+.shoe_img{
+    height: 70%;
+    width: 99%;
+    justify-items: center;
+    justify-self: center;
+    justify-content: center;
+}
+
+.shoe img{
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+.head_shoe{
+    margin-top: 5vw;
+    /* margin-left: 1vw; */
+    font-size: 2rem;
+    font-family: 'Dancing Script', cursive;
+}
+
+.head_shoe p{
+    font-size: 1.6rem;
+    color: rgb(164, 163, 163);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.desc_shoe{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 2vw;
+}
+
+.shoe_col i:first-child{
+    left: -100px;
+}
+.shoe_col i:last-child{
+    left: 100px;
+}
+
+.shoe_col i{
+    height: 50px;
+    width: 50px;
+    background: black;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+}
+
+/*Dress COllections */
+
+.dress_collection{
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 100%; */
+    overflow-y: hidden;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px 10px rgb(227, 226, 226);
+    justify-content: center;
+}
+
+.dress{
+    height:252px;
+    width: 10rem;
+    margin: 2vw;
+    object-fit: contain;
+}
+
+.dress_img{
+    height: 70%;
+    width: 99%;
+    justify-items: center;
+    justify-self: center;
+    justify-content: center;
+}
+
+.dress img{
+    width: 100%;
+    height: 100%;
+}
+
+.dress_desc{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 2vw;
+}
+
+.head_dress{
+    margin-top: 5vw;
+    /* margin-left: 1vw; */
+    font-size: 2rem;
+    font-family: 'Dancing Script', cursive;
+}
+
+.head_dress p{
+    font-size: 1.6rem;
+    color: rgb(164, 163, 163);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+/*Heels*/
+
+
+.heel_collection{
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 100%; */
+    overflow-y: hidden;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px 10px rgb(227, 226, 226);
+    justify-content: center;
+}
+
+.heel{
+    height:252px;
+    width: 10rem;
+    margin: 2vw;
+    object-fit: contain;
+}
+
+.heel_img{
+    height: 70%;
+    width: 99%;
+    justify-items: center;
+    justify-self: center;
+    justify-content: center;
+}
+
+.heel img{
+    width: 100%;
+    height: 100%;
+}
+
+.heel_desc{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 2vw;
+}
+
+.head_heels{
+    margin-top: 5vw;
+    /* margin-left: 1vw; */
+    font-size: 2rem;
+    font-family: 'Allura', cursive;
+}
+
+.head_heels p{
+    font-size: 1.6rem;
+    color: rgb(164, 163, 163);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.comp_desc{
+    margin-top: 6vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.owner_img{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 100%;
+    margin-top: 40px;
+
+}
+
+.owner_img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.owner_desc{
+   margin-top: 100px;
+   width: 40%;
+}
+
+.end_slogan{
+    text-align: center;
+    margin-top: 6vw;
+    font-size: 2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.end{
+    height: 300px;
+    width: 100vw;
+    background-color: gray;
+    margin-top: 4vw;
+}
+
+@media screen {
+    .owner_img{
+        max-width: 300px;
+        min-width: 300px;
+        min-width: 120px;
+        min-height: 120px;
+    }
+}
+
+.contact {
+    background-color: #f4f4f4;
+    padding: 100px 0;
+    font-size: 30px;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contact-form textarea {
+    height: 150px;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+}
